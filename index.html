@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLog JSON Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="logo.png" alt="AutoLog" class="brand-logo" onerror="this.onerror=null; this.src='placeholder_logo.png'; this.parentNode.innerHTML='<div class=\'brand-icon\'>🚗</div><h1 data-i18n=\'appTitle\'>AutoLog Viewer</h1>';">
+                <h1 data-i18n="appTitle">AutoLog Viewer</h1>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <button class="tab active" data-tab="vehicles">
+                    <span class="tab-icon">🚙</span> 
+                    <span data-i18n="vehicles">Vehicles</span>
+                    <span class="badge badge-diesel" style="margin-left: auto; font-size: 10px;" id="vehiclesCount">0</span>
+                </button>
+                <button class="tab" data-tab="fuelLogs">
+                    <span class="tab-icon">⛽</span> 
+                    <span data-i18n="fuelLogs">Fuel/Charge</span>
+                    <span class="badge badge-diesel" style="margin-left: auto; font-size: 10px;" id="fuelLogsCount">0</span>
+                </button>
+                <button class="tab" data-tab="maintenance">
+                    <span class="tab-icon">🔧</span> 
+                    <span data-i18n="maintenance">Maintenance</span>
+                    <span class="badge badge-diesel" style="margin-left: auto; font-size: 10px;" id="maintenanceCount">0</span>
+                </button>
+                <button class="tab" data-tab="expenses">
+                    <span class="tab-icon">💰</span> 
+                    <span data-i18n="expenses">Expenses</span>
+                    <span class="badge badge-diesel" style="margin-left: auto; font-size: 10px;" id="expensesCount">0</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Wrapper -->
+        <main class="main-wrapper">
+            <!-- Topbar -->
+            <div class="topbar">
+                <div class="topbar-left">
+                    <div id="fileInfo" class="file-status hidden">
+                        <span id="fileName" class="file-name">filename.json</span>
+                        <div class="file-meta">
+                            <span id="exportDate">2025-01-01</span> • <span id="appVersion">1.0.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <button id="exportCsvBtn" class="btn-secondary hidden" data-i18n="exportCsv">Export CSV</button>
+                    <button id="openFileBtn" class="btn-primary" data-i18n="openFile">Open File</button>
+                    <div style="width: 1px; height: 24px; background: var(--border); margin: 0 8px;"></div>
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">English</option>
+                        <option value="ko">한국어</option>
+                    </select>
+                    <button id="helpBtn" class="btn-icon">❓</button>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-scroll">
+                <div id="mainContent" class="main-content hidden">
+                    
+                    <div class="backup-notice">
+                        <span class="notice-icon">💡</span>
+                        <span class="notice-text">All data is displayed based on the export date. This is a read-only viewer.</span>
+                    </div>
+
+                    <!-- Stats -->
+                    <div id="summaryStats" class="summary-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon" style="color: #2563EB; background: #DBEAFE;">⛽</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="totalFuelCost">$0</div>
+                                <div class="stat-label" data-i18n="totalFuelCost">Total Fuel Cost</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="color: #D97706; background: #FEF3C7;">🔧</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="totalMaintenanceCost">$0</div>
+                                <div class="stat-label" data-i18n="totalMaintenanceCost">Maintenance Cost</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="color: #059669; background: #D1FAE5;">💰</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="totalExpenses">$0</div>
+                                <div class="stat-label" data-i18n="totalExpenses">Other Expenses</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="color: #4B5563; background: #F3F4F6;">📊</div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="totalAllCosts">$0</div>
+                                <div class="stat-label" data-i18n="totalAllCosts">Total All Costs</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter Bar -->
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                        <select id="vehicleFilter" class="vehicle-filter">
+                            <option value="">All Vehicles</option>
+                        </select>
+                        <button id="clearSearch" class="btn-secondary" data-i18n="clear">Clear</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div id="vehiclesTab" class="tab-content active table-container">
+                        <div id="vehiclesTable"></div>
+                    </div>
+
+                    <div id="fuelLogsTab" class="tab-content table-container">
+                        <div id="fuelLogsTable"></div>
+                    </div>
+
+                    <div id="maintenanceTab" class="tab-content table-container">
+                        <div id="maintenanceTable"></div>
+                    </div>
+
+                    <div id="expensesTab" class="tab-content table-container">
+                        <div id="expensesTable"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen" class="welcome-screen">
+            <div class="welcome-content">
+                <h2>🚗 AutoLog JSON Viewer</h2>
+                <p>View JSON backup files exported from AutoLog app.</p>
+                <p class="web-version-notice">🌐 Web Browser Version - No installation required!</p>
+                <button id="openFileBtn2" class="btn-primary" style="margin-top: 24px; font-size: 16px; padding: 12px 32px;">
+                    📂 Open JSON File
+                </button>
+                <div class="features">
+                    <div class="feature">
+                        <h3>✅ Complete Data View</h3>
+                        <p>Vehicles, fuel logs, maintenance, expenses</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🔍 Search & Filter</h3>
+                        <p>Filter by vehicle and quick search</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📊 Statistics</h3>
+                        <p>View cost summaries and totals</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🔒 Privacy First</h3>
+                        <p>All data processed locally in your browser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail Modal -->
+        <div id="detailModal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div id="detailContent"></div>
+            </div>
+        </div>
+
+        <!-- Help Modal -->
+        <div id="helpModal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div id="helpContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden File Input -->
+    <input type="file" id="fileInput" accept=".json" style="display: none;">
+
+    <script src="app.js"></script>
+</body>
+</html>
