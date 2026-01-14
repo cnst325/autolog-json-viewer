@@ -341,7 +341,7 @@ body:lang(ko) {
     backdrop-filter: blur(12px);
 }
 
-.search-input, .vehicle-filter {
+.search-input, .vehicle-filter, .sort-filter {
     padding: 12px 14px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
@@ -351,7 +351,7 @@ body:lang(ko) {
     transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.search-input:focus, .vehicle-filter:focus {
+.search-input:focus, .vehicle-filter:focus, .sort-filter:focus {
     outline: none;
     border-color: rgba(34, 211, 238, 0.7);
     box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
@@ -360,6 +360,14 @@ body:lang(ko) {
 
 .search-input {
     flex: 1;
+}
+
+.vehicle-filter, .sort-filter {
+    min-width: 160px;
+}
+
+.sort-filter {
+    cursor: pointer;
 }
 
 /* Table */

@@ -37,7 +37,7 @@
                 </button>
                 <button class="tab" data-tab="expenses">
                     <span class="tab-icon">💰</span> 
-                    <span data-i18n="expenses">Expenses</span>
+                    <span data-i18n="expenses">Other Costs</span>
                     <span class="badge badge-diesel" style="margin-left: auto; font-size: 10px;" id="expensesCount">0</span>
                 </button>
             </nav>
@@ -62,6 +62,10 @@
                     <select id="languageSelect" class="language-select">
                         <option value="en">English</option>
                         <option value="ko">한국어</option>
+                        <option value="de">Deutsch</option>
+                        <option value="ja">日本語</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
                     </select>
                     <button id="helpBtn" class="btn-icon">❓</button>
                 </div>
@@ -96,7 +100,7 @@
                             <div class="stat-icon" style="color: #059669; background: #D1FAE5;">💰</div>
                             <div class="stat-content">
                                 <div class="stat-value" id="totalExpenses">$0</div>
-                                <div class="stat-label" data-i18n="totalExpenses">Other Expenses</div>
+                                <div class="stat-label" data-i18n="totalExpenses">Other Costs</div>
                             </div>
                         </div>
                         <div class="stat-card">
@@ -112,7 +116,14 @@
                     <div class="search-bar">
                         <input type="text" id="searchInput" placeholder="Search..." class="search-input">
                         <select id="vehicleFilter" class="vehicle-filter">
-                            <option value="">All Vehicles</option>
+                            <option value="" data-i18n="allVehicles">All Vehicles</option>
+                        </select>
+                        <select id="sortFilter" class="sort-filter">
+                            <option value="default" data-i18n="sortDefault">Default</option>
+                            <option value="name-asc" data-i18n="sortNameAsc">Name (A-Z)</option>
+                            <option value="name-desc" data-i18n="sortNameDesc">Name (Z-A)</option>
+                            <option value="date-asc" data-i18n="sortDateAsc">Date (Old-New)</option>
+                            <option value="date-desc" data-i18n="sortDateDesc">Date (New-Old)</option>
                         </select>
                         <button id="clearSearch" class="btn-secondary" data-i18n="clear">Clear</button>
                     </div>
@@ -149,7 +160,7 @@
                 <div class="features">
                     <div class="feature">
                         <h3>✅ Complete Data View</h3>
-                        <p>Vehicles, fuel logs, maintenance, expenses</p>
+                        <p>Vehicles, fuel logs, maintenance, other costs</p>
                     </div>
                     <div class="feature">
                         <h3>🔍 Search & Filter</h3>

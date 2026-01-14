@@ -26,14 +26,14 @@ Host on GitHub Pages or any static file server.
 - **🚗 Vehicles** - All registered vehicles with details
 - **⛽ Fuel/Charge Logs** - Refueling and charging history
 - **🔧 Maintenance** - Service and repair records
-- **💰 Expenses** - Other vehicle-related costs
+- **💰 Other Costs** - Other vehicle-related costs
 
 ## Data Summary
 
 The viewer provides automatic cost summaries:
 - Total Fuel/Charging Cost
 - Total Maintenance Cost
-- Total Other Expenses
+- Total Other Costs
 - Combined Total
 
 ## Browser Compatibility
