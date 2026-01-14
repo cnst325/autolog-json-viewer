@@ -15,8 +15,12 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="brand">
-                <img src="logo.png" alt="AutoLog" class="brand-logo" onerror="this.onerror=null; this.src='placeholder_logo.png'; this.parentNode.innerHTML='<div class=\'brand-icon\'>🚗</div><h1 data-i18n=\'appTitle\'>AutoLog Viewer</h1>';">
-                <h1 data-i18n="appTitle">AutoLog Viewer</h1>
+                <img src="logo.png" alt="AutoLog" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="brand-icon" style="display: none;">🚗</div>
+                <div class="brand-text">
+                    <div class="brand-name">AutoLog</div>
+                    <div class="brand-subtitle">JSON Viewer</div>
+                </div>
             </div>
             
             <nav class="sidebar-nav">
