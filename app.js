@@ -92,6 +92,8 @@ const translations = {
         helpExportDesc: "Click 'Export CSV' to download your data in spreadsheet format.",
         helpPrivacy: "Privacy",
         helpPrivacyDesc: "All data is processed locally in your browser. No data is ever sent to any server.",
+        helpUnits: "Unit Settings",
+        helpUnitsDesc: "Use the dropdowns in the top-right to change currency, distance unit (km/mi), and volume unit (L/gal). Your preferences are saved automatically.",
         close: "Close",
         // Additional fuel types
         hybridGasoline: "Gasoline Hybrid",
@@ -165,7 +167,17 @@ const translations = {
         periodDaily: "Daily",
         periodWeekly: "Weekly",
         periodMonthly: "Monthly",
-        periodYearly: "Yearly"
+        periodYearly: "Yearly",
+        // Unit settings
+        settings: "Settings",
+        currency: "Currency",
+        distanceUnit: "Distance Unit",
+        volumeUnit: "Volume Unit",
+        unitKm: "Kilometers (km)",
+        unitMile: "Miles (mi)",
+        unitLiter: "Liters (L)",
+        unitGallonUS: "US Gallons (gal)",
+        unitGallonUK: "UK Gallons (gal)"
     },
     ko: {
         appTitle: "AutoLog JSON 뷰어",
@@ -254,6 +266,8 @@ const translations = {
         helpExportDesc: "'CSV 내보내기'를 클릭하여 스프레드시트 형식으로 다운로드하세요.",
         helpPrivacy: "개인정보 보호",
         helpPrivacyDesc: "모든 데이터는 브라우저에서 로컬로 처리됩니다. 어떤 데이터도 서버로 전송되지 않습니다.",
+        helpUnits: "단위 설정",
+        helpUnitsDesc: "오른쪽 상단의 드롭다운을 사용하여 통화, 거리 단위(km/mi), 부피 단위(L/gal)를 변경할 수 있습니다. 설정은 자동으로 저장됩니다.",
         close: "닫기",
         // Additional fuel types
         hybridGasoline: "가솔린 하이브리드",
@@ -327,7 +341,17 @@ const translations = {
         periodDaily: "매일",
         periodWeekly: "매주",
         periodMonthly: "매월",
-        periodYearly: "매년"
+        periodYearly: "매년",
+        // 단위 설정
+        settings: "설정",
+        currency: "통화",
+        distanceUnit: "거리 단위",
+        volumeUnit: "부피 단위",
+        unitKm: "킬로미터 (km)",
+        unitMile: "마일 (mi)",
+        unitLiter: "리터 (L)",
+        unitGallonUS: "미국 갤런 (gal)",
+        unitGallonUK: "영국 갤런 (gal)"
     },
     de: {
         appTitle: "AutoLog JSON Viewer",
@@ -409,6 +433,8 @@ const translations = {
         helpExportDesc: "Klicken Sie auf 'CSV exportieren', um Ihre Daten im Tabellenformat herunterzuladen.",
         helpPrivacy: "Datenschutz",
         helpPrivacyDesc: "Alle Daten werden lokal in Ihrem Browser verarbeitet. Es werden niemals Daten an einen Server gesendet.",
+        helpUnits: "Einheiten",
+        helpUnitsDesc: "Verwenden Sie die Dropdowns oben rechts, um Währung, Entfernungseinheit (km/mi) und Volumeneinheit (L/gal) zu ändern. Ihre Einstellungen werden automatisch gespeichert.",
         close: "Schließen",
         hybridGasoline: "Benzin-Hybrid",
         hybridDiesel: "Diesel-Hybrid",
@@ -474,7 +500,17 @@ const translations = {
         periodDaily: "Täglich",
         periodWeekly: "Wöchentlich",
         periodMonthly: "Monatlich",
-        periodYearly: "Jährlich"
+        periodYearly: "Jährlich",
+        // Einheiten
+        settings: "Einstellungen",
+        currency: "Währung",
+        distanceUnit: "Entfernungseinheit",
+        volumeUnit: "Volumeneinheit",
+        unitKm: "Kilometer (km)",
+        unitMile: "Meilen (mi)",
+        unitLiter: "Liter (L)",
+        unitGallonUS: "US-Gallonen (gal)",
+        unitGallonUK: "UK-Gallonen (gal)"
     },
     ja: {
         appTitle: "AutoLog JSON ビューア",
@@ -556,6 +592,8 @@ const translations = {
         helpExportDesc: "「CSVエクスポート」をクリックして、スプレッドシート形式でダウンロードします。",
         helpPrivacy: "プライバシー",
         helpPrivacyDesc: "すべてのデータはブラウザでローカルに処理されます。データがサーバーに送信されることはありません。",
+        helpUnits: "単位設定",
+        helpUnitsDesc: "右上のドロップダウンを使用して、通貨、距離単位(km/mi)、容量単位(L/gal)を変更できます。設定は自動的に保存されます。",
         close: "閉じる",
         hybridGasoline: "ガソリンハイブリッド",
         hybridDiesel: "ディーゼルハイブリッド",
@@ -621,7 +659,17 @@ const translations = {
         periodDaily: "毎日",
         periodWeekly: "毎週",
         periodMonthly: "毎月",
-        periodYearly: "毎年"
+        periodYearly: "毎年",
+        // 単位設定
+        settings: "設定",
+        currency: "通貨",
+        distanceUnit: "距離単位",
+        volumeUnit: "容量単位",
+        unitKm: "キロメートル (km)",
+        unitMile: "マイル (mi)",
+        unitLiter: "リットル (L)",
+        unitGallonUS: "米ガロン (gal)",
+        unitGallonUK: "英ガロン (gal)"
     },
     es: {
         appTitle: "AutoLog JSON Viewer",
@@ -703,6 +751,8 @@ const translations = {
         helpExportDesc: "Haga clic en 'Exportar CSV' para descargar sus datos en formato de hoja de cálculo.",
         helpPrivacy: "Privacidad",
         helpPrivacyDesc: "Todos los datos se procesan localmente en su navegador. Nunca se envían datos a ningún servidor.",
+        helpUnits: "Configuración de unidades",
+        helpUnitsDesc: "Use los menús desplegables en la parte superior derecha para cambiar la moneda, la unidad de distancia (km/mi) y la unidad de volumen (L/gal). Sus preferencias se guardan automáticamente.",
         close: "Cerrar",
         hybridGasoline: "Híbrido de gasolina",
         hybridDiesel: "Híbrido diésel",
@@ -768,7 +818,17 @@ const translations = {
         periodDaily: "Diario",
         periodWeekly: "Semanal",
         periodMonthly: "Mensual",
-        periodYearly: "Anual"
+        periodYearly: "Anual",
+        // Configuración de unidades
+        settings: "Configuración",
+        currency: "Moneda",
+        distanceUnit: "Unidad de distancia",
+        volumeUnit: "Unidad de volumen",
+        unitKm: "Kilómetros (km)",
+        unitMile: "Millas (mi)",
+        unitLiter: "Litros (L)",
+        unitGallonUS: "Galones estadounidenses (gal)",
+        unitGallonUK: "Galones británicos (gal)"
     },
     fr: {
         appTitle: "AutoLog JSON Viewer",
@@ -850,6 +910,8 @@ const translations = {
         helpExportDesc: "Cliquez sur 'Exporter CSV' pour télécharger vos données au format tableur.",
         helpPrivacy: "Confidentialité",
         helpPrivacyDesc: "Toutes les données sont traitées localement dans votre navigateur. Aucune donnée n'est jamais envoyée à un serveur.",
+        helpUnits: "Paramètres d'unités",
+        helpUnitsDesc: "Utilisez les menus déroulants en haut à droite pour modifier la devise, l'unité de distance (km/mi) et l'unité de volume (L/gal). Vos préférences sont enregistrées automatiquement.",
         close: "Fermer",
         hybridGasoline: "Hybride essence",
         hybridDiesel: "Hybride diesel",
@@ -915,7 +977,17 @@ const translations = {
         periodDaily: "Quotidien",
         periodWeekly: "Hebdomadaire",
         periodMonthly: "Mensuel",
-        periodYearly: "Annuel"
+        periodYearly: "Annuel",
+        // Paramètres d'unités
+        settings: "Paramètres",
+        currency: "Devise",
+        distanceUnit: "Unité de distance",
+        volumeUnit: "Unité de volume",
+        unitKm: "Kilomètres (km)",
+        unitMile: "Miles (mi)",
+        unitLiter: "Litres (L)",
+        unitGallonUS: "Gallons américains (gal)",
+        unitGallonUK: "Gallons britanniques (gal)"
     }
 };
 
@@ -925,6 +997,8 @@ let jsonData = null;
 let currentTab = 'vehicles';
 let vehicleMap = {};
 let currentCurrency = { code: 'USD', locale: 'en-US' };
+let currentDistanceUnit = 'km'; // 'km' or 'mi'
+let currentVolumeUnit = 'L'; // 'L', 'gal_us', or 'gal_uk'
 
 // ============== 초기화 ==============
 document.addEventListener('DOMContentLoaded', () => {
@@ -937,6 +1011,22 @@ function initLanguage() {
     const savedLang = localStorage.getItem('autolog-viewer-lang') || 'en';
     currentLang = savedLang;
     document.getElementById('languageSelect').value = savedLang;
+    
+    // Load saved unit preferences
+    const savedCurrency = localStorage.getItem('autolog-viewer-currency');
+    const savedDistanceUnit = localStorage.getItem('autolog-viewer-distance-unit') || 'km';
+    const savedVolumeUnit = localStorage.getItem('autolog-viewer-volume-unit') || 'L';
+    
+    if (savedCurrency) {
+        currentCurrency = { code: savedCurrency, locale: savedLang === 'ko' ? 'ko-KR' : 'en-US' };
+        document.getElementById('currencySelect').value = savedCurrency;
+    }
+    
+    currentDistanceUnit = savedDistanceUnit;
+    currentVolumeUnit = savedVolumeUnit;
+    document.getElementById('distanceUnitSelect').value = savedDistanceUnit;
+    document.getElementById('volumeUnitSelect').value = savedVolumeUnit;
+    
     applyTranslations();
 }
 
@@ -1103,6 +1193,35 @@ function initEventListeners() {
         applyTranslations();
         if (jsonData) {
             calculateStats();
+            renderCurrentTab();
+        }
+    });
+    
+    // Currency select
+    document.getElementById('currencySelect').addEventListener('change', (e) => {
+        const selectedCurrency = e.target.value;
+        currentCurrency = { code: selectedCurrency, locale: currentLang === 'ko' ? 'ko-KR' : 'en-US' };
+        localStorage.setItem('autolog-viewer-currency', selectedCurrency);
+        if (jsonData) {
+            calculateStats();
+            renderCurrentTab();
+        }
+    });
+    
+    // Distance unit select
+    document.getElementById('distanceUnitSelect').addEventListener('change', (e) => {
+        currentDistanceUnit = e.target.value;
+        localStorage.setItem('autolog-viewer-distance-unit', currentDistanceUnit);
+        if (jsonData) {
+            renderCurrentTab();
+        }
+    });
+    
+    // Volume unit select
+    document.getElementById('volumeUnitSelect').addEventListener('change', (e) => {
+        currentVolumeUnit = e.target.value;
+        localStorage.setItem('autolog-viewer-volume-unit', currentVolumeUnit);
+        if (jsonData) {
             renderCurrentTab();
         }
     });
@@ -1373,7 +1492,7 @@ function renderVehiclesTable(searchTerm = '') {
                         <td>${v.year || '-'}</td>
                         <td><span class="plate-chip">${escapeHtml(v.plateNumber || v.additionalInfo || '-')}</span></td>
                         <td><span class="badge badge-${getFuelTypeBadge(v.fuelType)}">${getFuelTypeLabel(v.fuelType)}</span></td>
-                        <td>${formatNumber(v.currentOdometer)} km</td>
+                        <td>${formatDistance(v.currentOdometer)}</td>
                         <td>${formatDate(v.purchaseDate)}</td>
                     </tr>
                 `).join('')}
@@ -1442,9 +1561,9 @@ function renderFuelLogsTable(searchTerm = '', vehicleId = '') {
                         <td>${escapeHtml(l.stationName || '-')}</td>
                         <td><span class="badge badge-${getFuelTypeBadge(l.fuelType)}">${getFuelTypeLabel(l.fuelType)}</span></td>
                         <td>${formatCurrency(l.pricePerUnit)}</td>
-                        <td>${l.fuelType === 'ELECTRIC' ? `${l.batteryAfter - l.batteryBefore}%` : `${l.quantity?.toFixed(1) || '-'} L`}</td>
+                        <td>${l.fuelType === 'ELECTRIC' ? `${l.batteryAfter - l.batteryBefore}%` : formatVolume(l.quantity)}</td>
                         <td><strong>${formatCurrency(l.totalCost)}</strong></td>
-                        <td>${l.calculatedEfficiency ? `${l.calculatedEfficiency.toFixed(1)} km/L` : '-'}</td>
+                        <td>${l.calculatedEfficiency ? formatEfficiency(l.calculatedEfficiency) : '-'}</td>
                     </tr>
                 `).join('')}
             </tbody>
@@ -1513,8 +1632,8 @@ function renderMaintenanceTable(searchTerm = '', vehicleId = '') {
                         <td>${escapeHtml(m.description || '-')}</td>
                         <td><strong>${formatCurrency(m.cost)}</strong></td>
                         <td>${escapeHtml(m.shopName || '-')}</td>
-                        <td>${formatNumber(m.odometerReading)} km</td>
-                        <td>${m.nextDueOdometer ? `${formatNumber(m.nextDueOdometer)} km` : (m.nextDueDate ? formatDate(m.nextDueDate) : '-')}</td>
+                        <td>${formatDistance(m.odometerReading)}</td>
+                        <td>${m.nextDueOdometer ? formatDistance(m.nextDueOdometer) : (m.nextDueDate ? formatDate(m.nextDueDate) : '-')}</td>
                     </tr>
                 `).join('')}
             </tbody>
@@ -1656,13 +1775,13 @@ function renderVehicleDetail(v) {
         <p><strong>${t.year}:</strong> ${v.year || '-'}</p>
         <p><strong>${t.plateNumber}:</strong> ${escapeHtml(v.plateNumber || v.additionalInfo || '-')}</p>
         <p><strong>${t.fuelType}:</strong> ${getFuelTypeLabel(v.fuelType)}</p>
-        <p><strong>${t.odometer}:</strong> ${formatNumber(v.currentOdometer)} km</p>
-        ${v.tankCapacity ? `<p><strong>${t.tankCapacity}:</strong> ${v.tankCapacity} L</p>` : ''}
+        <p><strong>${t.odometer}:</strong> ${formatDistance(v.currentOdometer)}</p>
+        ${v.tankCapacity ? `<p><strong>${t.tankCapacity}:</strong> ${formatVolume(v.tankCapacity)}</p>` : ''}
         ${v.purchaseDate ? `<p><strong>${t.purchaseDate}:</strong> ${formatDate(v.purchaseDate)}</p>` : ''}
-        ${v.purchaseOdometer != null ? `<p><strong>${t.purchaseOdometer}:</strong> ${formatNumber(v.purchaseOdometer)} km</p>` : ''}
+        ${v.purchaseOdometer != null ? `<p><strong>${t.purchaseOdometer}:</strong> ${formatDistance(v.purchaseOdometer)}</p>` : ''}
         ${v.purchasePrice != null ? `<p><strong>${t.purchasePrice}:</strong> ${formatCurrency(v.purchasePrice)}</p>` : ''}
         ${v.saleDate ? `<p><strong>${t.saleDate}:</strong> ${formatDate(v.saleDate)}</p>` : ''}
-        ${v.saleOdometer != null ? `<p><strong>${t.saleOdometer}:</strong> ${formatNumber(v.saleOdometer)} km</p>` : ''}
+        ${v.saleOdometer != null ? `<p><strong>${t.saleOdometer}:</strong> ${formatDistance(v.saleOdometer)}</p>` : ''}
         ${v.salePrice != null ? `<p><strong>${t.salePrice}:</strong> ${formatCurrency(v.salePrice)}</p>` : ''}
         <p><strong>${t.isCurrent}:</strong> ${v.isCurrent ? (t.yes || 'Yes') : (t.no || 'No')}</p>
         ${v.note ? `<p><strong>${t.vehicleNote}:</strong> ${escapeHtml(v.note)}</p>` : ''}
@@ -1692,13 +1811,13 @@ function renderFuelLogDetail(l) {
             <p><strong>${t.quantity}:</strong> ${l.quantity?.toFixed(2) || '-'} ${qtyUnit}</p>
             ${l.chargingTime != null ? `<p><strong>${t.chargingTime}:</strong> ${l.chargingTime} ${currentLang === 'ko' ? '분' : 'min'}</p>` : ''}
         ` : `
-            <p><strong>${t.pricePerUnit}:</strong> ${formatCurrency(l.pricePerUnit)}/L</p>
-            <p><strong>${t.quantity}:</strong> ${l.quantity?.toFixed(2) || '-'} L</p>
+            <p><strong>${t.pricePerUnit}:</strong> ${formatCurrency(l.pricePerUnit)}/${getVolumeUnitLabel()}</p>
+            <p><strong>${t.quantity}:</strong> ${formatVolume(l.quantity)}</p>
             <p><strong>${t.fullTank}:</strong> ${l.isFullTank ? (t.yes || 'Yes') : (t.no || 'No')}</p>
         `}
         <p><strong>${t.totalCost}:</strong> ${formatCurrency(l.totalCost)}</p>
-        <p><strong>${t.odometer}:</strong> ${formatNumber(l.odometerReading)} km</p>
-        ${l.calculatedEfficiency ? `<p><strong>${t.efficiency}:</strong> ${l.calculatedEfficiency.toFixed(2)} ${efficiencyUnit}</p>` : ''}
+        <p><strong>${t.odometer}:</strong> ${formatDistance(l.odometerReading)}</p>
+        ${l.calculatedEfficiency ? `<p><strong>${t.efficiency}:</strong> ${formatEfficiency(l.calculatedEfficiency)}</p>` : ''}
         ${l.paymentMethod ? `<p><strong>${t.paymentMethod}:</strong> ${formatPaymentMethod(l.paymentMethod)}</p>` : ''}
         ${l.notes ? `<p><strong>${t.notes}:</strong> ${escapeHtml(l.notes)}</p>` : ''}
         ${l.receiptImageUri ? `<p><strong>${t.receipt}:</strong> ${escapeHtml(l.receiptImageUri)}</p>` : ''}
@@ -1718,8 +1837,8 @@ function renderMaintenanceDetail(m) {
         <p><strong>${t.description}:</strong> ${escapeHtml(m.description || '-')}</p>
         <p><strong>${t.cost}:</strong> ${formatCurrency(m.cost)}</p>
         <p><strong>${t.shop}:</strong> ${escapeHtml(m.shopName || '-')}</p>
-        <p><strong>${t.odometer}:</strong> ${formatNumber(m.odometerReading)} km</p>
-        ${m.nextDueOdometer != null ? `<p><strong>${t.nextDue} (${t.odometer}):</strong> ${formatNumber(m.nextDueOdometer)} km</p>` : ''}
+        <p><strong>${t.odometer}:</strong> ${formatDistance(m.odometerReading)}</p>
+        ${m.nextDueOdometer != null ? `<p><strong>${t.nextDue} (${t.odometer}):</strong> ${formatDistance(m.nextDueOdometer)}</p>` : ''}
         ${m.nextDueDate ? `<p><strong>${t.nextDue} (${t.date}):</strong> ${formatDate(m.nextDueDate)}</p>` : ''}
         ${m.notes ? `<p><strong>${t.notes}:</strong> ${escapeHtml(m.notes)}</p>` : ''}
         ${m.receiptImageUri ? `<p><strong>${t.receipt}:</strong> ${escapeHtml(m.receiptImageUri)}</p>` : ''}
@@ -2073,6 +2192,9 @@ function showHelp() {
         <h3 style="margin-top: 24px; color: #2e7d5b;">${t.helpExport}</h3>
         <p style="margin: 12px 0;">${t.helpExportDesc}</p>
         
+        <h3 style="margin-top: 24px; color: #2e7d5b;">${t.helpUnits}</h3>
+        <p style="margin: 12px 0;">${t.helpUnitsDesc}</p>
+        
         <h3 style="margin-top: 24px; color: #2e7d5b;">${t.helpPrivacy}</h3>
         <p style="margin: 12px 0;">${t.helpPrivacyDesc}</p>
     `;
@@ -2087,6 +2209,99 @@ function closeModals() {
 }
 
 // ============== 유틸리티 함수 ==============
+
+// Unit conversion constants
+const CONVERSIONS = {
+    KM_TO_MILE: 0.621371,
+    MILE_TO_KM: 1.60934,
+    LITER_TO_GALLON_US: 0.264172,
+    LITER_TO_GALLON_UK: 0.219969,
+    GALLON_US_TO_LITER: 3.78541,
+    GALLON_UK_TO_LITER: 4.54609
+};
+
+/**
+ * Convert distance from km to the selected unit
+ */
+function convertDistance(km) {
+    if (km === null || km === undefined) return 0;
+    const numKm = typeof km === 'number' ? km : parseFloat(km) || 0;
+    
+    if (currentDistanceUnit === 'mi') {
+        return numKm * CONVERSIONS.KM_TO_MILE;
+    }
+    return numKm;
+}
+
+/**
+ * Format distance with the current unit
+ */
+function formatDistance(km, decimals = 0) {
+    const converted = convertDistance(km);
+    const formatted = formatNumber(converted.toFixed(decimals));
+    return `${formatted} ${currentDistanceUnit}`;
+}
+
+/**
+ * Convert volume from L to the selected unit
+ */
+function convertVolume(liters) {
+    if (liters === null || liters === undefined) return 0;
+    const numLiters = typeof liters === 'number' ? liters : parseFloat(liters) || 0;
+    
+    if (currentVolumeUnit === 'gal_us') {
+        return numLiters * CONVERSIONS.LITER_TO_GALLON_US;
+    } else if (currentVolumeUnit === 'gal_uk') {
+        return numLiters * CONVERSIONS.LITER_TO_GALLON_UK;
+    }
+    return numLiters;
+}
+
+/**
+ * Format volume with the current unit
+ */
+function formatVolume(liters, decimals = 2) {
+    const converted = convertVolume(liters);
+    return `${converted.toFixed(decimals)} ${getVolumeUnitLabel()}`;
+}
+
+/**
+ * Get the current volume unit label
+ */
+function getVolumeUnitLabel() {
+    switch (currentVolumeUnit) {
+        case 'gal_us':
+            return 'gal';
+        case 'gal_uk':
+            return 'gal';
+        case 'L':
+        default:
+            return 'L';
+    }
+}
+
+/**
+ * Calculate efficiency (consumption) with current units
+ * For km/L or mi/gal
+ */
+function formatEfficiency(kmPerLiter) {
+    if (!kmPerLiter) return '-';
+    
+    const distance = convertDistance(kmPerLiter); // convert km part
+    const volume = 1; // keep as 1 since we're showing per unit
+    
+    // If using gallons, need to convert the efficiency
+    if (currentVolumeUnit === 'gal_us') {
+        const milesPerGallon = kmPerLiter * CONVERSIONS.KM_TO_MILE * CONVERSIONS.GALLON_US_TO_LITER;
+        return `${milesPerGallon.toFixed(1)} ${currentDistanceUnit}/gal`;
+    } else if (currentVolumeUnit === 'gal_uk') {
+        const milesPerGallon = kmPerLiter * CONVERSIONS.KM_TO_MILE * CONVERSIONS.GALLON_UK_TO_LITER;
+        return `${milesPerGallon.toFixed(1)} ${currentDistanceUnit}/gal`;
+    }
+    
+    return `${distance.toFixed(1)} ${currentDistanceUnit}/${getVolumeUnitLabel()}`;
+}
+
 function formatDate(dateStr) {
     if (!dateStr) return '-';
     const date = new Date(dateStr);
@@ -2178,7 +2393,28 @@ function detectCurrencyFromData(data, langFallback = 'en') {
         '₦': 'NGN',
         '₺': 'TRY',
         'R$': 'BRL',
-        '₽': 'RUB'
+        '₽': 'RUB',
+        'Fr': 'CHF',
+        '฿': 'THB',
+        'RM': 'MYR',
+        'Rp': 'IDR',
+        'NT$': 'TWD',
+        'HK$': 'HKD',
+        'NZ$': 'NZD',
+        'C$': 'CAD',
+        'A$': 'AUD',
+        'S$': 'SGD',
+        'kr': 'SEK', // SEK, NOK, DKK 모두 kr 사용
+        'R': 'ZAR',
+        'د.إ': 'AED',
+        '﷼': 'SAR',
+        'zł': 'PLN',
+        'Kč': 'CZK',
+        'Ft': 'HUF',
+        '₪': 'ILS',
+        'E£': 'EGP',
+        '₨': 'PKR',
+        '৳': 'BDT'
     };
 
     // Try to detect from formatted amount strings that include a symbol
