@@ -370,6 +370,11 @@ body:lang(ko) {
     cursor: pointer;
 }
 
+.vehicle-filter option, .sort-filter option {
+    background: var(--surface);
+    color: var(--text-main);
+}
+
 /* Table */
 .table-container {
     background: rgba(255, 255, 255, 0.02);
